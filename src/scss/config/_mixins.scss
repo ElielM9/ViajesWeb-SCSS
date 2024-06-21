@@ -1,0 +1,64 @@
+@use "config/variables" as var;
+
+// Breakpoints
+@mixin phone {
+  @media (min-width: var.$phone) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: var.$tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: var.$desktop) {
+    @content;
+  }
+}
+
+@mixin desktopXL {
+  @media (min-width: var.$desktopXL) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+// Grid
+@mixin grid($column, $espaciado) {
+  display: grid;
+  grid-template-columns: repeat($column, 1fr);
+  gap: $espaciado;
+}
+
+// Botones
+@mixin button($color, $text) {
+  display: block;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: $color;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $text;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 1rem;
+
+  @include tablet {
+    width: auto;
+  }
+
+  @include hover {
+    &:hover {
+      background-color: darken($color, 10%);
+      cursor: pointer;
+    }
+  }
+}
