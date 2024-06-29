@@ -1,0 +1,42 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.header {
+  background-image: url(../assets/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0 20rem;
+
+  &__top-bar {
+    display: none;
+
+    @include mix.tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__search {
+    margin-top: 5rem;
+    text-align: center;
+
+    @include mix.tablet {
+      margin-top: 30rem;
+    }
+
+    &-p {
+      color: var.$white;
+    }
+
+    &-btn {
+      @include mix.button(var.$white, var.$primary-color);
+    }
+  }
+}
+
+.logo-text {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var.$primary-color;
+}

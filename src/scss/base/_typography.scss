@@ -1,3 +1,5 @@
+@use "config/variables" as var;
+
 @for $i from 1 to 4 {
   h#{$i} {
     margin: 0;
@@ -18,6 +20,17 @@ h3 {
 }
 
 p {
+  margin: 1rem 0;
   font-size: 2rem;
   color: var.$black;
+}
+
+a {
+  text-decoration: none;
+  line-height: 1.6;
+  font-size: 2rem;
+}
+
+[class$="__title"] {
+  margin: 2rem 0;
 }

@@ -13,5 +13,391 @@
     />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__top-bar header__contenedor">
+        <div class="logo">
+          <a href="index.html" class="logo-text">Viajero</a>
+        </div>
+
+        <nav class="nav">
+          <a href="#" class="nav__link">Hospedarte</a>
+          <a href="#" class="nav__link">Experiencias</a>
+        </nav>
+
+        <nav class="nav nav--login">
+          <a href="#" class="nav__link nav__link--login">Hazte anfitrión</a>
+        </nav>
+      </div>
+
+      <form action="" class="form form__contenedor">
+        <div class="form__camp">
+          <label for="ubication" class="form__camp-label">Ubicación</label>
+          <input
+            type="text"
+            name="ubication"
+            id="ubication"
+            class="form__camp-input"
+            placeholder="¿A dónde viajas?"
+          />
+        </div>
+        <div class="form__camp">
+          <label for="arrival" class="form__camp-label">Llegada</label>
+          <input
+            type="date"
+            name="arrival"
+            id="arrival"
+            class="form__camp-input"
+          />
+        </div>
+        <div class="form__camp">
+          <label for="output" class="form__camp-label">Salída</label>
+          <input
+            type="date"
+            name="output"
+            id="output"
+            class="form__camp-input"
+          />
+        </div>
+        <div class="form__camp">
+          <label for="guests" class="form__camp-label">Personas</label>
+          <input
+            type="number"
+            name="guests"
+            id="guests"
+            placeholder="¿Cuántos son?"
+            class="form__camp-input"
+          />
+        </div>
+        <div class="form__camp">
+          <input
+            type="submit"
+            name="search"
+            value="Buscar"
+            class="form__camp-btn"
+          />
+        </div>
+      </form>
+
+      <div class="header__search header__contenedor">
+        <p class="header__search-p">¿No sabes a dónde ir?</p>
+        <a href="#" class="header__search-btn">Busca tu próxima ciudad</a>
+      </div>
+    </header>
+    <section class="section destinations destinations__contenedor">
+      <h2 class="destinations__title">Descubre alojamientos populares</h2>
+      <ul class="destinations__grid">
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_1.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_1.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_1.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">Nueva York</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_2.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_2.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_2.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">Paris</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_3.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_3.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_3.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">San Francisco</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_4.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_4.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_4.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">Egipto</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_5.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_5.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_5.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">Londres</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_6.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_6.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_6.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">Roma</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_7.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_7.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_7.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">India</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+        <li class="destination">
+          <picture class="destination__picture">
+            <source
+              srcset="./assets/img/icons/icono_destino_8.avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/img/icons/icono_destino_8.webp"
+              type="image/webp"
+            />
+            <img
+              class="destination__img"
+              loading="lazy"
+              width="500"
+              height="300"
+              src="./assets/img/icons/icono_destino_8.png"
+              alt=""
+            />
+          </picture>
+          <div class="destination__info">
+            <h3 class="destination__name">Atenas</h3>
+            <p class="destination__distance">4 Hrs. en avión</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="section places places__contenedor">
+      <h2 class="places__title">Vive en cualquier lugar del mundo</h2>
+      <div class="places__grid">
+        <div class="place">
+          <img
+            class="place__img"
+            src="./assets/img/vive_1.jpg"
+            alt="imagen-lugar"
+          />
+          <p class="place__name">Al aire libre</p>
+        </div>
+        <div class="place">
+          <img
+            class="place__img"
+            src="./assets/img/vive_2.jpg"
+            alt="imagen-lugar"
+          />
+          <p class="place__name">Alojamientos únicos</p>
+        </div>
+        <div class="place">
+          <img
+            class="place__img"
+            src="./assets/img/vive_3.jpg"
+            alt="imagen-lugar"
+          />
+          <p class="place__name">Alojamientos enteros</p>
+        </div>
+        <div class="place">
+          <img
+            class="place__img"
+            src="./assets/img/vive_4.jpg"
+            alt="imagen-lugar"
+          />
+          <p class="place__name">Con tu mascota</p>
+        </div>
+      </div>
+    </section>
+    <section class="section hosts hosts__contenedor">
+      <div class="hosts__content">
+        <h2 class="hosts__title">Sé un anfitrión</h2>
+        <p class="hosts__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam
+          iste corporis deserunt quaerat quidem deleniti, cupiditate repellendus
+          eveniet? Esse maxime, tempore ipsam cumque nam at ut iusto est minus?
+        </p>
+        <a href="#" class="hosts__btn">Más información</a>
+      </div>
+    </section>
+    <section
+      class="section discover-experiences discover-experiences__contenedor"
+    >
+      <h2 class="discover-experiences__title">Descubre nuevas experiencias</h2>
+      <div class="discover-experiences__grid">
+        <div class="experience">
+          <img
+            class="experience__img"
+            src="./assets/img/experiencia_1.jpg"
+            alt="imagen-experiencia"
+          />
+          <p class="experience__name">Viajes de largo plazo</p>
+        </div>
+        <div class="experience">
+          <img
+            class="experience__img"
+            src="./assets/img/experiencia_2.jpg"
+            alt="imagen-experiencia"
+          />
+          <p class="experience__name">Cultura y gastronomía</p>
+        </div>
+        <div class="experience">
+          <img
+            class="experience__img"
+            src="./assets/img/experiencia_3.jpg"
+            alt="imagen-experiencia"
+          />
+          <p class="experience__name">Deportes y entretenimiento</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__grid footer__contenedor">
+        <div class="footer__widget">
+          <h3 class="footer__titulo">Acerca de</h3>
+          <nav class="nav nav--footer">
+            <a class="nav__link nav__link--footer" href="#">Saber más</a>
+            <a class="nav__link nav__link--footer" href="#">Conócenos</a>
+            <a class="nav__link nav__link--footer" href="#">Detrás de escena</a>
+            <a class="nav__link nav__link--footer" href="#">Recursos adicionales</a>
+          </nav>
+        </div>
+        <div class="footer__widget">
+          <h3 class="footer__titulo">Comunidad</h3>
+          <nav class="nav nav--footer">
+            <a class="nav__link nav__link--footer" href="#">Comparte tu aventura</a>
+            <a class="nav__link nav__link--footer" href="#">Conéctate con otros</a>
+            <a class="nav__link nav__link--footer" href="#">Inspírate</a>
+            <a class="nav__link nav__link--footer" href="#">Viaja sin límites</a>
+          </nav>
+        </div>
+        <div class="footer__widget">
+          <h3 class="footer__titulo">Anfitriones</h3>
+          <nav class="nav nav--footer">
+            <a class="nav__link nav__link--footer" href="#">Únete a otros</a>
+            <a class="nav__link nav__link--footer" href="#">Consejos</a>
+            <a class="nav__link nav__link--footer" href="#">Crea relaciones</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__bottom-bar footer__contenedor">
+        <nav class="nav nav--bottom-bar">
+          <a class="nav__link nav__link--bottom-bar" href="#">Enlace 1</a>
+          <a class="nav__link nav__link--bottom-bar" href="#">Enlace 2</a>
+          <a class="nav__link nav__link--bottom-bar" href="#">Enlace 3</a>
+          <a class="nav__link nav__link--bottom-bar" href="#">Enlace 4</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,26 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.discover-experiences {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    column-gap: 4rem;
+
+    @include mix.scroll;
+
+    @include mix.tablet {
+      @include mix.grid(3, 2rem);
+    }
+  }
+}
+
+.experience {
+  &__img {
+    border-radius: 3rem;
+  }
+
+  &__name {
+    text-align: center;
+  }
+}

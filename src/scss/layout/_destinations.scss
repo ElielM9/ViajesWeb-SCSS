@@ -1,0 +1,31 @@
+@use "config/variables" as var;
+@use "config/mixins" as mix;
+
+.destinations {
+  &__grid {
+    @include mix.grid(1, 2rem);
+
+    @include mix.tablet {
+      @include mix.grid(2, 2rem);
+    }
+
+    @include mix.desktop {
+      @include mix.grid(4, 2rem);
+    }
+  }
+}
+
+.destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__picture {
+    width: 14rem;
+  }
+
+  &__name {
+    color: var.$primary-color;
+    margin: 0;
+  }
+}

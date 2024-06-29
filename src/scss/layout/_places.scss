@@ -1,0 +1,30 @@
+@use "config/variables" as variables;
+@use "config/mixins" as mix;
+
+.places {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 30rem);
+    column-gap: 4rem;
+
+    @include mix.scroll;
+
+    @include mix.tablet {
+      @include mix.grid(2, 2rem);
+    }
+
+    @include mix.desktop {
+      @include mix.grid(4, 2rem);
+    }
+  }
+}
+
+.place {
+  &__img {
+    border-radius: 3rem;
+  }
+
+  &__name {
+    text-align: center;
+  }
+}
